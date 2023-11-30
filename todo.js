@@ -2,11 +2,6 @@ document.getElementById('add-todo')
         .addEventListener('click', function() {
             var todoText = document.getElementById('todo-input').value;
     
-            if (todoText === '') {
-                alert('Please enter a task!');
-                return;
-            }
-
             var listItem = document.createElement('li');
             listItem.className = 'todo-item';
             listItem.innerHTML = `
