@@ -40,7 +40,7 @@ button{
     padding: 8px;
 }
 button:active {
-    border-style: outset;
+    border-style: inset;
   }
 
 .todo-item > button {
