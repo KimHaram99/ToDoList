@@ -19,10 +19,23 @@ body {
     padding: 0;
 }
 
-input[type='checkbox'] {
+label.circle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000000;
     border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
 }
-
+input[type="checkbox"]:checked + label.circle {
+    border-color: rgb(0, 179, 101);
+}
+input[type="checkbox"]:checked {
+    text-decoration: line-through;
+}
+input[type="checkbox"]{
+    display: none;
+}
 .todo-item {
     background-color: #fff;
     margin-bottom: 5px;

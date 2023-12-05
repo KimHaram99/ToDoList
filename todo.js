@@ -5,9 +5,11 @@ document.getElementById('add-todo')
             var listItem = document.createElement('li');
             listItem.className = 'todo-item';
             listItem.innerHTML = `
-                <span>
-                    <input type='checkbox' name='circle'/>${todoText}
-                </span>
+                <label>
+                    <input type="checkbox" id="circle"/>
+                    <label class="circle"></label>
+                        ${todoText}
+                </label>
                 <button class="delete-btn">Delete</button>
             `;
 
@@ -15,6 +17,8 @@ document.getElementById('add-todo')
     document.getElementById('todo-input').value = '';
 
     listItem.querySelector('.delete-btn').addEventListener('click', function() {
-        listItem.remove();
+        if(confirm('정말 삭제?')){
+             listItem.remove();
+        }
     });
 });
