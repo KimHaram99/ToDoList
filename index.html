@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
-    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="todo-container">
-        <h1>ToDo List</h1>
-        <input type="text" id="todo-input" placeholder="Add a new task...">
-        <button id="add-todo">Add</button>
-        <ul id="todo-list"></ul>
+<!-- 
+    참고자료: https://www.youtube.com/watch?v=G0jO8kUrg-I
+-->
+
+    <div class="container">
+        <div class="todo-app">    
+            <h1>todo-list</h1>
+            <div class="row">
+                <input type="text" id="input-text" placeholder="Add a new task...">
+                <button onclick="addBtn()">Add</button>
+            </div>
+            <ul id="todo-list">
+                <!-- <li class="checked">task1</li>
+                <li>task1</li> -->
+            </ul>
+        </div>
     </div>
-    <script src="todo.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
